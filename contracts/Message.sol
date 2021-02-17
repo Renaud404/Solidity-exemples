@@ -4,7 +4,7 @@ contract Message {
  
     string lemessage;
  
-    constructor(string memory _messageoriginal) {
+    constructor(string memory _messageoriginal) public {
         lemessage = _messageoriginal;
     }
  
