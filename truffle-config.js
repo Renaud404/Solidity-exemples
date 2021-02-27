@@ -25,6 +25,12 @@
 // const mnemonic = fs.readFileSync(".secret").toString().trim();
 
 module.exports = {
+  networks: {
+      development: {
+        host: "127.0.0.1",
+        port: 7545,
+        network_id: "*"
+      },
   /**
    * Networks define how you connect to your ethereum client and let you set the
    * defaults web3 uses to send transactions. If you don't specify one truffle
@@ -35,12 +41,7 @@ module.exports = {
    * $ truffle test --network <network-name>
    */
 
-  networks: {
-      development: {
-        host: "127.0.0.1",
-        port: 7545,
-        network_id: "*"
-      },
+
     // Useful for testing. The `development` name is special - truffle uses it by default
     // if it's defined here and no other network is specified at the command line.
     // You should run a client (like ganache-cli, geth or parity) in a separate terminal
